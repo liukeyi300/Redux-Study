@@ -1,0 +1,21 @@
+/**
+ * Created by Liukeyi on 2016/11/22.
+ */
+import React from 'react';
+import { render } from 'react-dom';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import App from './containers/App';
+import todoApp from './src/reducers';
+
+export const start = () => {
+    let store = createStore(todoApp);
+    let rootElement = document.getElementById('root');
+
+    render(
+        <Provider store={store}>
+            <App />
+        </Provider>,
+        rootElement
+    );
+};
