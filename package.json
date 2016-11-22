@@ -1,0 +1,17 @@
+{
+  "name": "redux-study",
+  "version": "1.0.0",
+  "description": "Study redux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Redux"
+  ],
+  "author": "Liob.Liu",
+  "license": "ISC",
+  "devDependencies": {
+    "redux": "^3.6.0"
+  }
+}
