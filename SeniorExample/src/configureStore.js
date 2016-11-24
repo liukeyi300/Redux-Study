@@ -8,11 +8,11 @@ import rootReducer from './reducer';
 
 const loggerMiddleware = createLogger();
 
-const createStoreWidthMiddleware = applyMiddleware(
+const createStoreWithMiddleware = applyMiddleware(
     thunkMiddleware,
     loggerMiddleware
 )(createStore);
 
 export default function configureStore(initialState) {
-    return createStoreWidthMiddleware(rootReducer, initialState);
+    return createStoreWithMiddleware(rootReducer, initialState);
 }
